@@ -1,0 +1,23 @@
+.coaf-form, #sp-form{
+  margin-top: 5em;
+  text-align:center;
+}
+
+.coaf-form button {
+  margin-top: 1em;
+}
+
+.coaf-form .field{
+  margin: auto !important;
+
+}
+
+#bo-display {
+  margin-top: 2em;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.header {
+  color: deepskyblue !important;
+}

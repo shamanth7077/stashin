@@ -1,0 +1,213 @@
+<div *ngIf="users.length > 0" >
+    <div id="display" class="ui segment">
+    <h4>Registered {{user}}s</h4>
+    <table class="ui celled padded blue table" *ngIf="user === 'owner'">
+        <thead>
+        <tr>
+            <th class="center aligned">Name</th>
+            <th class="center aligned">PRC NUMBER</th>
+            <th class="center aligned">Status</th>
+            <th class="center aligned">Number of Assets</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr *ngFor="let user of users">
+            <td class="center aligned">
+                {{ user.name }}
+            </td>
+            <td class="center aligned">
+                {{ user.SSN }}
+            </td>
+            <td class="center aligned">
+                {{ user.status }}
+            </td>
+            <td class="center aligned">
+                {{ user.noofassets }}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table class="ui celled padded blue table" *ngIf="user === 'asset'">
+        <thead>
+        <tr>
+            <th class="center aligned">Category</th>
+            <th class="center aligned">Amt</th>
+            <th class="center aligned">Available For Sale</th>
+            <th class="center aligned">Insured</th>
+            <th class="center aligned">Insurer Name</th>
+            <th class="center aligned">Show More Asset Info </th>
+            <th class="center algined">See pictures</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr *ngFor="let user of users">
+            <td class="center aligned">
+                {{ user.category }}
+            </td>
+            <td class="center aligned">
+                {{ user.value }}
+            </td>
+            <td class="center aligned">
+                {{ user.availableforsale }}
+            </td>
+
+
+            <td class="center aligned" *ngIf="user.insured">
+                <i class="check square icon"></i>
+            </td>
+            <td class="center aligned" *ngIf="!user.insured">
+                <button class="a-btn a-btn-s a-btn-primary" (click)="AssignInsurer(user)">
+                    Assign Insurer
+                </button>
+            </td>
+            <td class="center aligned" *ngIf="user.insured">
+                     {{ user.insurername }}
+            </td>
+            <td class="center aligned" *ngIf="!user.insured">
+                 N/A
+            </td>
+            <td class="center aligned" >
+                <button class="a-btn a-btn-s a-btn-primary" (click)="GetAssetInfo(user)">
+                    Show More Asset Info
+                </button>
+            </td>
+                 <td class="center aligned" *ngIf="user.category==='Automobile'" >
+            <button class="a-btn a-btn-s a-btn-primary" onclick="window.open('http://www.hdcarwallpapers.com/walls/2018_audi_r8_spyder_v10_plus_4k-HD.jpg')" >Show pictures</button>
+            </td>
+            <td class="center aligned" *ngIf="user.category==='BMW'" >
+       <button class="a-btn a-btn-s a-btn-primary" onclick="window.open('https://www.bmw.dk/content/dam/bmw/common/all-models/m-series/m6-gran-coupe/2015/model-card/BMW-M6-Gran-Coupe_ModelCard.png')" >Show pictures</button>
+       </td>
+       <td class="center aligned" *ngIf="user.category==='House'" >
+     <button class="a-btn a-btn-s a-btn-primary" onclick="window.open('http://www.kmldesign.dk/greengate/GREENGATE_0001_LOW.jpg')" >Show pictures</button>
+     </td>
+
+        </tr>
+        </tbody>
+    </table>
+    <h5 *ngIf="user==='insurer'" style="margin:5px 0"> ASSET CATEGORY : {{category}} </h5>
+        <table class="ui celled padded blue table" *ngIf="user === 'insurer'">
+        <thead>
+        <tr>
+            <th class="center aligned">Name</th>
+            <th class="center aligned">Identification Number </th>
+            <th class="center algned">Insurer Node(Go to node for more info) </th>
+            <th class="center aligned">Automobile Premium</th>
+            <th class="center aligned">House Premium </th>
+
+
+            <th class="center aligned"> Select</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr *ngFor="let user of Insurers">
+            <td class="center aligned">
+                {{ user.name.toUpperCase() }}
+            </td>
+            <td class="center aligned">
+                {{ user.automobilepremieum }}
+            </td>
+            <td class="center aligned">
+                {{ user.NodeId }}
+            </td>
+            <td class="center aligned" *ngIf="flag===false" >
+              <button class="a-btn a-btn-s a-btn-primary" (click)="getquote1(user.NodeId)" [disabled]="!categoryautomobile()">
+                  Get Quote
+              </button>
+            </td>
+            <td class="center aligned"*ngIf="flag===true&&user.NodeId===5" >
+              {{quote1}}
+            </td>
+            <td class="center aligned"*ngIf="flag===true&&user.NodeId===6" >
+              {{quotes[0]}}
+            </td>
+            <td class="center aligned" *ngIf="flag2===false">
+              <button class="a-btn a-btn-s a-btn-primary" (click)="getquote2(user.NodeId)" [disabled]="!categoryhouse()">
+                  Get Quote
+              </button>
+            </td>
+            <td class="center aligned"*ngIf="flag2===true&& user.NodeId===5" >
+              {{quote2}}
+            </td>
+            <td class="center aligned"*ngIf="flag2===true&& user.NodeId===6" >
+              {{quotes[1]}}
+            </td>
+
+
+
+            <td class="center aligned" >
+                <button class="a-btn a-btn-s a-btn-primary" (click)="create(user)">
+                    Select Insurer
+                </button>
+            </td>
+
+        </tr>
+        </tbody>
+    </table>
+    <table class="ui celled padded blue table" *ngIf="user === 'assetinfo'">
+        <thead>
+        <tr>
+            <th class="center aligned">Category</th>
+            <th class="center aligned"*ngIf="assetinfo.category === 'Automobile'">Licence Plate</th>
+            <th class="center aligned"*ngIf="assetinfo.category === 'Automobile'">Automobile Model  </th>
+            <th class="center aligned"*ngIf="assetinfo.category === 'Automobile'">Automobile Mark</th>
+            <th class="center aligned"*ngIf="assetinfo.category === 'Automobile'">Engine Size</th>
+            <th class="center aligned"*ngIf="assetinfo.category === 'House'">House address </th>
+            <th class="center aligned">Return </th>
+
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td class="center aligned">
+                {{ assetinfo.category }}
+            </td>
+            <td class="center aligned" *ngIf="assetinfo.category === 'Automobile'">
+                {{ assetinfo.amlicenceplate }}
+            </td>
+
+
+            <td class="center aligned" *ngIf="assetinfo.category === 'Automobile'">
+                {{ assetinfo.automobilemodel }}
+            </td>
+
+            <td class="center aligned" *ngIf="assetinfo.category === 'Automobile'">
+                {{ assetinfo.automobilemark }}
+            </td>
+
+            <td class="center aligned" *ngIf="assetinfo.category === 'Automobile'">
+                {{ assetinfo.enginesize }}
+            </td>
+
+            <td class="center aligned" *ngIf="assetinfo.category === 'House'">
+                {{ assetinfo.houseno+assetinfo.street+assetinfo.postalcode }}
+            </td>
+
+            <td class="center aligned" >
+                <button class="a-btn a-btn-s a-btn-primary" (click)="return()">
+                    Return
+                </button>
+            </td>
+
+        </tr>
+        </tbody>
+    </table>
+
+
+</div>
+    </div>
+
+<div *ngIf="users.length === 0" >
+    <div id="no-users" class="ui segment">
+        <div class="row">
+        </div>
+        <div class="row">
+            <div class="center aligned column">
+                <h4>No Registered {{user}}s</h4>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<search *ngIf="!COAF"></search>
+
+<user-list *ngIf="COAF && hasAssets == true " [type]="'asset'" [users]="users"></user-list>
+
+<user-form *ngIf="COAF && hasAssets == false" [type]="'asset'" (refresh)="refresh($event)"></user-form>
+
+<button *ngIf="COAF && hasAssets == true" class="button a-btn a-btn-m a-btn-primary" style="height:39px;width:275px;margin-top:30px;margin-left:10%;padding-top:10px"(click)="showform(true)">Register New Asset </button>
+
+<button *ngIf="COAF && hasAssets == false" class="button a-btn a-btn-m a-btn-primary" style="height:39px;width:175px;margin-top:30px;margin-left:10%;padding-top:10px"(click)="showform(false)">Go Back </button>

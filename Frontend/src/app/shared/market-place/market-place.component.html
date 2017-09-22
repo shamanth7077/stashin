@@ -1,0 +1,176 @@
+<search *ngIf="!COAF"></search>
+<table class="ui celled padded blue table" style="margin:100px 10%; width: 80%" *ngIf="COAF && user==='view'" >
+    <thead>
+    <tr>
+        <th class="center aligned">Owner Name</th>
+        <th class="center aligned">Contact Number</th>
+        <th class="center aligned">Category</th>
+        <th class="center aligned">Selling Price</th>
+        <th class="center aligned">Automobile Mark</th>
+        <th class="center aligned"> Automobile Model </th>
+        <th class="center aligned"> Licence Plate</th>
+        <th class="center aligned"> Enginesize </th>
+        <th class="center aligned"> House address </th>
+        <th class="Record Sale"> Record Sale </th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr *ngFor="let user of users">
+
+      <td class="center aligned">
+          {{ user.ownername }}
+      </td>
+      <td class="center aligned">
+          {{ user.contactnumber }}
+      </td>
+      <td class="center aligned">
+          {{ user.category }}
+      </td>
+      <td class="center aligned">
+          {{ user.value }}
+      </td>
+      <td class="center aligned" *ngIf="user.category === 'Automobile'">
+          {{ user.automobilemark }}
+      </td>
+      <td class="center aligned" *ngIf="user.category !== 'Automobile'">
+          N/A
+      </td>
+      <td class="center aligned" *ngIf="user.category === 'Automobile'">
+          {{ user.automobilemodel }}
+      </td>
+      <td class="center aligned" *ngIf="user.category !== 'Automobile'">
+          N/A
+      </td>
+      <td class="center aligned" *ngIf="user.category === 'Automobile'">
+          {{ user.licenceplate }}
+      </td>
+      <td class="center aligned" *ngIf="user.category !== 'Automobile'">
+          N/A
+      </td>
+
+
+
+      <td class="center aligned" *ngIf="user.category === 'Automobile'">
+          {{ user.enginesize }}
+      </td>
+      <td class="center aligned" *ngIf="user.category !== 'Automobile'">
+          N/A
+      </td>
+      <td class="center aligned" *ngIf="user.category === 'House'">
+          {{ user.houseno+user.street+user.postalcode }}
+      </td>
+      <td class="center aligned" *ngIf="user.category !== 'House'">
+          N/A
+      </td>
+        <td class="center aligned">
+            <button class="a-btn a-btn-m a-btn-primary" (click)="switchscreens(user)">
+                RecordSale
+            </button>
+        </td>
+
+
+    </tr>
+    </tbody>
+</table>
+<div id="form" style="margin-top:100px;">
+      <form class="ui form centered grid">
+<h4  style="margin-bottom:50px;width:87%;" *ngIf="user === 'sale'">RECORD SALE</h4>
+<div class="row" *ngIf="user === 'sale'">
+
+  <!--  <div class="six wide aligned column">
+      <div class="field">
+          <label>Seller node</label>
+      </div>
+    </div>
+    <div class="six wide aligned column">
+
+        <div class="field">
+            <input type="number" placeholder="seller node" [(ngModel)]="node" name="node">
+        </div>
+    </div>-->
+
+    <div _ngcontent-c4="" class="m-input-container g-container">
+                        <div _ngcontent-c4="" class="g-row">
+                            <div _ngcontent-c4="" class="col-s-2 col-m-2">
+                                <label _ngcontent-c4="" class="a-input-label">Seller node:</label>
+                            </div>
+                            <div _ngcontent-c4="" class="col-s-6 col-m-5">
+                                <div _ngcontent-c4="" class="input-content">
+                                    <input type="number" placeholder="seller node" [(ngModel)]="node" name="node">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+  <!--  <div class="six wide aligned column">
+      <div class="field">
+          <label>Buyer node</label>
+      </div>
+    </div>
+      <div class="six wide aligned column">
+        <div class="field" >
+            <input type="number"  placeholder="buyer node" [(ngModel)]="node2" name="node2">
+        </div>
+    </div>-->
+
+    <div _ngcontent-c4="" class="m-input-container g-container">
+                        <div _ngcontent-c4="" class="g-row">
+                            <div _ngcontent-c4="" class="col-s-2 col-m-2">
+                                <label _ngcontent-c4="" class="a-input-label">Buyer node:</label>
+                            </div>
+                            <div _ngcontent-c4="" class="col-s-6 col-m-5">
+                                <div _ngcontent-c4="" class="input-content">
+                                    <input type="number"  placeholder="buyer node" [(ngModel)]="node2" name="node2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+  <!--  <div class="six wide aligned column">
+      <div class="field">
+          <label>Asset id (this must be provided by the CURRENT owner of this asset)</label>
+      </div>
+    </div>
+      <div class="six wide aligned column">
+        <div class="field" >
+            <input type="number"  placeholder="asset id" [(ngModel)]="assetid" name="assetid">
+        </div>
+    </div>-->
+
+    <div _ngcontent-c4="" class="m-input-container g-container">
+                        <div _ngcontent-c4="" class="g-row">
+                            <div _ngcontent-c4="" class="col-s-2 col-m-2">
+                                <label _ngcontent-c4="" class="a-input-label">Asset id<br> (this must be provided by the CURRENT owner of this asset):</label>
+                            </div>
+                            <div _ngcontent-c4="" class="col-s-6 col-m-5">
+                                <div _ngcontent-c4="" class="input-content">
+                                      <input type="number"  placeholder="asset id" [(ngModel)]="assetid" name="assetid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+    <div class="three wide aligned column" style="text-align:right">
+        <div class="field" >
+            <button class="a-btn a-btn-m a-btn-primary" (click)="RecordSale()">
+
+                Record Sale
+            </button>
+        </div>
+    </div>
+    <div class="two wide aligned column" style="margin-right:175px">
+        <div class="field" >
+            <button class="a-btn a-btn-m a-btn-primary" (click)="return()">
+
+                Return
+            </button>
+        </div>
+    </div>
+</div>
+</form>
+</div>

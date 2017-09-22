@@ -1,0 +1,74 @@
+.appheader {
+    background: #003366;
+    font-size: 11px;
+    height: 16px;
+    font-weight: bold;
+    padding: 0 1px 0 0;
+    color: #336581;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+.gsSystemPadding {
+    margin-left: 28px;
+}
+
+.application01 {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background: #003366;
+    border-top: 1px solid #003366;
+}
+
+.application01 .appicons {
+    float: right;
+    padding: 0;
+}
+
+.application01 .appicons {
+    float: right;
+    padding: 0;
+}
+.gs-wpDbgGenericWebPart {
+    border: #003366;
+}
+.gsDbgGridFunctionMenu {
+    height: 0px;
+    left: 42px;
+    position: absolute;
+    top: -200px;
+    width: 250px;
+    z-index: 999999999;
+}
+.gsOverflow {
+    overflow: hidden;
+}
+.gsDbgDynamicTablePaddingTop {
+    padding-top: 6px;
+}
+.gsDbgDynamicTablePaddingBottom {
+    padding-bottom: 6px;
+}
+.gs-gridColPaddingRightMedium, .gsDbgDynamicTablePaddingRight {
+    padding-right: 6px;
+}
+.gs-gridColPaddingLeftMedium, .gsDbgDynamicTablePaddingLeft {
+    padding-left: 6px;
+}
+.gs-dbg-tablerow-standard {
+    height: 26px;
+}
+.gsDbgSpacerStandard {
+    width: 16px;
+}
+.gs-autoSizeButton {
+    width: auto;
+}
+.gs-button {
+    font-size: 11px;
+    line-height: 12px;
+    background-color: #e6e6e6;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+

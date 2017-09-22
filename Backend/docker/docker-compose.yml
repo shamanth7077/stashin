@@ -1,0 +1,81 @@
+version: '3'
+
+services:
+  bootnode:
+    container_name: bootnode
+    image: quorum-7nodes
+    command: bash -c "./scripts/start_bootnode.sh"
+    volumes:
+      - ./logs:/quorum-examples/examples/7nodes/logs
+    ports:
+      - "30301:30301"
+
+  node1:
+    container_name: node1
+    image: quorum-7nodes
+    command: bash -c "./scripts/start_node1.sh"
+    volumes:
+      - ./logs:/quorum-examples/examples/7nodes/logs
+    ports:
+      - "21000:21000"
+      - "22000:22000"
+
+  node2:
+    container_name: node2
+    image: quorum-7nodes
+    command: bash -c "./scripts/start_node2.sh"
+    volumes:
+      - ./logs:/quorum-examples/examples/7nodes/logs
+    ports:
+      - "21001:21001"
+      - "22001:22001"
+
+  node3:
+    container_name: node3
+    image: quorum-7nodes
+    command: bash -c "./scripts/start_node3.sh"
+    volumes:
+      - ./logs:/quorum-examples/examples/7nodes/logs
+    ports:
+      - "21002:21002"
+      - "22002:22002"
+
+  node4:
+    container_name: node4
+    image: quorum-7nodes
+    command: bash -c "./scripts/start_node4.sh"
+    volumes:
+      - ./logs:/quorum-examples/examples/7nodes/logs
+    ports:
+      - "21003:21003"
+      - "22003:22003"
+
+  node5:
+    container_name: node5
+    image: quorum-7nodes
+    command: bash -c "./scripts/start_node5.sh"
+    volumes:
+      - ./logs:/quorum-examples/examples/7nodes/logs
+    ports:
+      - "21004:21004"
+      - "22004:22004"
+
+  node6:
+    container_name: node6
+    image: quorum-7nodes
+    command: bash -c "./scripts/start_node6.sh"
+    volumes:
+      - ./logs:/quorum-examples/examples/7nodes/logs
+    ports:
+      - "21005:21005"
+      - "22005:22005"
+
+  node7:
+    container_name: node7
+    image: quorum-7nodes
+    command: bash -c "./scripts/start_node7.sh"
+    volumes:
+      - ./logs:/quorum-examples/examples/7nodes/logs
+    ports:
+      - "21006:21006"
+      - "22006:22006"

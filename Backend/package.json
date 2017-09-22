@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm ./DB/* && rm ./docker/logs/*",
+    "build": "cd ./docker && ./build.sh && cd ..",
+    "start": "docker-compose -f ./docker/docker-compose.yml up -d && sleep 3 && docker ps && nodemon app.js",
+    "stop": "docker-compose -f ./docker/docker-compose.yml down"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.2",
+    "log4js": "^1.1.1",
+    "nedb": "^1.8.0",
+    "web3": "^0.18.2"
+  }
+}

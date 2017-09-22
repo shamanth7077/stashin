@@ -1,0 +1,59 @@
+form{
+  padding:0 10% !important;
+}
+
+.form-container{
+
+    border-style: solid;
+    border-radius: 1em;
+    border-width: 1px;
+    border-color: #efeff0;
+    box-shadow: 0px 5px 30px -6px rgba(0,0,0,0.2);
+    z-index: 500;
+}
+.form-container button {
+    margin-bottom: 2em;
+}
+
+label {
+    margin-top: 5% !important;
+    text-align: left;
+}
+
+.coaf-form, #form{
+    margin-top: 5em;
+    text-align:center;
+}
+
+.coaf-form button {
+    margin-top: 1em;
+}
+
+.coaf-form .field{
+    margin: auto !important;
+
+}
+.paddingclass{
+  padding-left: 100px;
+}
+.margintopclass{
+  margin-top:5%;
+}
+
+#display {
+    margin-top: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.header {
+    color: deepskyblue !important;
+}
+h4{
+  text-align: left;
+  color: #002b50;
+    margin: 0 0 0 0;
+    font-size: 24px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}

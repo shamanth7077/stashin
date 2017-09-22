@@ -1,0 +1,55 @@
+<form class="create-payment ng-pristine ng-valid ng-touched">
+<div class="coaf-form">
+  <h4  *ngIf="stashinDeployed == false"> WELCOME TO STASHIN </h4>
+  <img src="../../../contract.png" style="margin-bottom:75px;" *ngIf="stashinDeployed == false" />
+  <div _ngcontent-c4="" class="m-input-container g-container" *ngIf="stashinDeployed == false">
+                    <div _ngcontent-c4="" class="g-row">
+                        <div _ngcontent-c4="" class="col-s-2 col-m-3">
+                            <label _ngcontent-c4="" class="a-input-label">Contract Number:<br>(Enter a contract reference number to deploy contract)</label>
+                        </div>
+                        <div _ngcontent-c4="" class="col-s-6 col-m-6">
+                            <div _ngcontent-c4="" class="input-content">
+                                <input class="a-input a-input-m" type="text" style="height:39px;width:65%;float:left;" #contractref>
+                                <button class="button a-btn a-btn-m a-btn-primary" style="height:39px;width:175px;margin-top:0;margin-left:20px;padding-top:10px"(click)="deploy(contractref.value)">Deploy stashin </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+<div *ngIf="stashinDeployed">
+  <h4 style="color:green">Contract Deployed: {{ContractName}}</h4>
+  <div _ngcontent-c4="" class="m-input-container g-container">
+                    <div _ngcontent-c4="" class="g-row">
+                        <div _ngcontent-c4="" class="col-s-6 col-m-6" style="padding:50px; border: 1px solid #ccc;">
+                          <!--<h4>Owner:</h4>-->
+                          <img src="../../../customer.png" style="margin: 25px auto; width:300px; height:300px; display:block;"/>
+                          <button class="button a-btn a-btn-m a-btn-primary" style="height:39px;width:170px;padding-top:10px;float:left" (click)="switchUser('owner')">I am an owner </button>
+                          <select style="float:left; width:200px; margin-left:30px;margin-top:17px;" *ngIf="ownerSelected" class="ui fluid search dropdown" name="Information" (change)="switchUserScreen($event.target.value)">
+                            <option value="">Select</option>
+                            <option value="3">Owner1 - Node 3</option>
+                            <option value="4">Owner2 - Node 4</option>
+                          </select>
+                        </div>
+                        <div _ngcontent-c4="" class="col-s-6 col-m-6" style="padding:50px; border: 1px solid #ccc;border-left:none;">
+                        <!--  <h4>Insurer:</h4>-->
+                          <img src="../../../insurer.jpg" style="margin: 25px auto; width:500px; height:300px; display:block; "/>
+                          <button class="button a-btn a-btn-m a-btn-primary"  style="height:39px;width:170px;padding-top:10px;float:left; margin-left:50px;" (click)="switchUser('insurer')">I am an Insurer </button>
+                          <select style="float:left; width:200px; margin-left:30px;margin-top:17px;" *ngIf="insurerSelected" class="ui fluid search dropdown" name="Information" (change)="switchUserScreen($event.target.value)">
+                            <option value="">Select</option>
+                            <option value="5">Insurer1- Node 5</option>
+                            <option value="6">Insurer2- Node 6</option>
+                          </select>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+    <!--<button class="button a-btn a-btn-m a-btn-primary" style="height:39px;padding-top:10px;float:left;margin-left:30px" (click)="newContract()">Deploy new contract </button> -->
+</div>
+
+
+</div>
+</form>

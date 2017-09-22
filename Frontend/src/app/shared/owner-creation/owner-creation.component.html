@@ -1,0 +1,61 @@
+<search *ngIf="!COAF"></search>
+
+<user-form *ngIf="COAF && !registered" [type]="'owner'" [owner]="owner" [COAF]="COAF"></user-form>
+
+<div id="form" *ngIf="registered">
+    <form class="ui form centered grid">
+        <div class="row">
+            <div class="center aligned column">
+                <h1>Node is assigned to OWNER</h1>
+                <h1>'{{ name.toUpperCase() }}'</h1>
+            </div>
+        </div>
+    </form>
+</div>
+<div *ngIf="own.name!=''" >
+    <div id="display" class="ui segment" style="margin:0 auto; width:80%;">
+    <h1>Registered Owner Information</h1>
+    <table class="ui celled padded blue table" *ngIf="user === 'owner'">
+        <thead>
+        <tr>
+            <th class="center aligned">Name</th>
+            <th class="center aligned">Age</th>
+            <th class="center aligned">Contact Number</th>
+            <th class="center aligned">CPR Number</th>
+            <th class="center aligned">Status</th>
+            <th class="center aligned">Address</th>
+            <th class="center aligned">Number of Assets</th>
+
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr >
+            <td class="center aligned">
+                {{ own.name }}
+            </td>
+            <td class="center aligned">
+                {{ own.age }}
+            </td>
+
+            <td class="center aligned">
+                {{ own.contactnumber }}
+            </td>
+
+            <td class="center aligned">
+                {{ own.SSN }}
+            </td>
+            <td class="center aligned">
+                {{ own.status }}
+            </td>
+            <td class="center aligned">
+                {{ own.address }}
+            </td>
+            <td class="center aligned">
+                {{ own.noofassets }}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+  </div>
+      </div>

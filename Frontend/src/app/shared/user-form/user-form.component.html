@@ -1,0 +1,617 @@
+<div id="form">
+    <form class="ui form centered grid" >
+        <div class="row">
+            <div class="center aligned column" style="padding:0;">
+                <h4>Register {{user}}</h4>
+            </div>
+        </div>
+        <div class="row" *ngIf="type === 'owner'">
+            <!--<div class="six wide  aligned column">
+              <div class="field">
+                  <label>Owner name</label>
+              </div>
+            </div>
+              <div class="six wide column">
+                <div class="field" >
+                    <input type="text" padding-top="5px" placeholder="{{user}} name" [(ngModel)]="newowner.name" name="owner-name">
+                </div>
+              </div>-->
+
+              <div _ngcontent-c4="" class="m-input-container g-container">
+                    <div _ngcontent-c4="" class="g-row">
+                        <div _ngcontent-c4="" class="col-s-2 col-m-2">
+                            <label _ngcontent-c4="" class="a-input-label">Owner name:</label>
+                        </div>
+                        <div _ngcontent-c4="" class="col-s-6 col-m-5">
+                            <div _ngcontent-c4="" class="input-content">
+                                <input type="text" padding-top="5px" placeholder="{{user}} name" [(ngModel)]="newowner.name" name="owner-name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!--<div class="six wide aligned column">
+              <div class="field">
+                  <label>Age</label>
+              </div>
+            </div>
+            <div class="six wide aligned column">
+                <div class="field" >
+                    <input type="number" min="0" placeholder="Age" [(ngModel)]="newowner.age" name="owner-age">
+                </div>
+            </div>-->
+
+            <div _ngcontent-c4="" class="m-input-container g-container">
+                  <div _ngcontent-c4="" class="g-row">
+                      <div _ngcontent-c4="" class="col-s-2 col-m-2">
+                          <label _ngcontent-c4="" class="a-input-label">Age:</label>
+                      </div>
+                      <div _ngcontent-c4="" class="col-s-6 col-m-5">
+                          <div _ngcontent-c4="" class="input-content">
+                              <input type="number" min="0" placeholder="Age" [(ngModel)]="newowner.age" name="owner-age">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+            <!--<div class="six wide aligned column">
+              <div class="field">
+                  <label>Contact Number</label>
+              </div>
+            </div>
+            <div class="six wide aligned column">
+                <div class="field" >
+                    <input type="number" min="0" placeholder="Contact  Number" [(ngModel)]="newowner.contactnumber" name="owner-contactnumber">
+                </div>
+
+            </div>-->
+
+            <div _ngcontent-c4="" class="m-input-container g-container">
+                  <div _ngcontent-c4="" class="g-row">
+                      <div _ngcontent-c4="" class="col-s-2 col-m-2">
+                          <label _ngcontent-c4="" class="a-input-label">Contact Number:</label>
+                      </div>
+                      <div _ngcontent-c4="" class="col-s-6 col-m-5">
+                          <div _ngcontent-c4="" class="input-content">
+                              <input type="number" min="0" placeholder="Contact  Number" [(ngModel)]="newowner.contactnumber" name="owner-contactnumber">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+
+            <!--<div class="six wide aligned column">
+              <div class="field">
+                  <label>CPR Number</label>
+              </div>
+            </div>
+            <div class="six wide aligned column">
+                <div class="field" >
+                    <input type="number" min="0" placeholder="CPR Number" [(ngModel)]="newowner.SSN" name="owner-SSN">
+                </div>
+            </div>-->
+
+            <div _ngcontent-c4="" class="m-input-container g-container">
+                  <div _ngcontent-c4="" class="g-row">
+                      <div _ngcontent-c4="" class="col-s-2 col-m-2">
+                          <label _ngcontent-c4="" class="a-input-label">CPR Number:</label>
+                      </div>
+                      <div _ngcontent-c4="" class="col-s-6 col-m-5">
+                          <div _ngcontent-c4="" class="input-content">
+                              <input type="number" min="0" placeholder="CPR Number" [(ngModel)]="newowner.SSN" name="owner-SSN">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+
+            <!--<div class="six wide aligned column">
+              <div class="field">
+                  <label>Status</label>
+              </div>
+            </div>
+            <div class="six wide aligned column">
+                <div class="field" >
+                  <select class="ui fluid search dropdown" name="owner-status" [(ngModel)]="newowner.status">
+                      <option value=''>Select choice</option>
+                      <option value="Individual">Individual</option>
+                      <option value="Business">Business</option>
+                  </select>
+
+                </div>
+            </div>-->
+
+            <div _ngcontent-c4="" class="m-input-container g-container">
+                  <div _ngcontent-c4="" class="g-row">
+                      <div _ngcontent-c4="" class="col-s-2 col-m-2">
+                          <label _ngcontent-c4="" class="a-input-label">Status:</label>
+                      </div>
+                      <div _ngcontent-c4="" class="col-s-6 col-m-5">
+                          <div _ngcontent-c4="" class="input-content">
+                            <select class="ui fluid search dropdown" name="owner-status" [(ngModel)]="newowner.status">
+                                <option value=''>Select choice</option>
+                                <option value="Individual">Individual</option>
+                                <option value="Business">Business</option>
+                            </select>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+            <!--<div class="six wide aligned column">
+              <div class="field">
+                  <label>Owner Address</label>
+              </div>
+            </div>
+            <div class="six wide aligned column">
+                <div class="field">
+                    <input type="text" placeholder="owner address" [(ngModel)]="newowner.address" name="owner-address">
+                </div>
+            </div>-->
+
+            <div _ngcontent-c4="" class="m-input-container g-container">
+                  <div _ngcontent-c4="" class="g-row">
+                      <div _ngcontent-c4="" class="col-s-2 col-m-2">
+                          <label _ngcontent-c4="" class="a-input-label">Owner Address:</label>
+                      </div>
+                      <div _ngcontent-c4="" class="col-s-6 col-m-5">
+                          <div _ngcontent-c4="" class="input-content">
+                            <input type="text" placeholder="owner address" [(ngModel)]="newowner.address" name="owner-address">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+            <div class="six wide aligned column">
+
+                <div class="paddingclass" >
+                    <button class="a-btn a-btn-m a-btn-primary" (click)="create()">
+
+                        Register
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" *ngIf="type === 'insurer'">
+            <!--<div class="six wide algined column">
+              <div class="field">
+                  <label>Insurer name</label>
+              </div>
+                <div class="field">
+                    <input type="text" placeholder="{{user}} name" [(ngModel)]="newinsurer.name" name="insurer-name">
+                </div>
+            </div>-->
+            <div _ngcontent-c4="" class="m-input-container g-container">
+                  <div _ngcontent-c4="" class="g-row">
+                      <div _ngcontent-c4="" class="col-s-2 col-m-2">
+                          <label _ngcontent-c4="" class="a-input-label">Insurer Name:</label>
+                      </div>
+                      <div _ngcontent-c4="" class="col-s-6 col-m-5">
+                          <div _ngcontent-c4="" class="input-content">
+                            <input type="text" placeholder="{{user}} name" [(ngModel)]="newinsurer.name" name="insurer-name">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+            <!--<div class="six wide column">
+              <div class="field">
+                  <label>Identification No:</label>
+              </div>
+                <div class="field" >
+                    <input type="number" min="0"  placeholder="Identification No" [(ngModel)]="newinsurer.automobilepremieum" name="insurer-automobilepremium">
+                </div>
+            </div>-->
+
+            <div _ngcontent-c4="" class="m-input-container g-container">
+                  <div _ngcontent-c4="" class="g-row">
+                      <div _ngcontent-c4="" class="col-s-2 col-m-2">
+                          <label _ngcontent-c4="" class="a-input-label">Identification No:</label>
+                      </div>
+                      <div _ngcontent-c4="" class="col-s-6 col-m-5">
+                          <div _ngcontent-c4="" class="input-content">
+                            <input type="number" min="0"  placeholder="Identification No" [(ngModel)]="newinsurer.automobilepremieum" name="insurer-automobilepremium">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+            <div class="six wide algined column">
+                <div class="field" style="float:right;padding-right:90px;">
+                    <button class="a-btn a-btn-m a-btn-primary" (click)="create()">
+
+                        Register
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div  class="row" *ngIf="type === 'asset'">
+
+            <!--<div class="six wide aligned column">
+
+                  <div class="field">
+                      <label >Category:</label>
+                  </div>
+             </div>
+              <div class="six wide aligned column">
+                  <select class="ui fluid search dropdown" name="asset-category" [(ngModel)]="newasset.category">
+                      <option value=''>Select choice</option>
+                      <option value="Automobile">Automobile</option>
+                      <option value="House">House</option>
+                  </select>
+
+
+              </div>-->
+
+
+              <div _ngcontent-c4="" class="m-input-container g-container">
+                    <div _ngcontent-c4="" class="g-row">
+                        <div _ngcontent-c4="" class="col-s-2 col-m-2">
+                            <label _ngcontent-c4="" class="a-input-label">Category:</label>
+                        </div>
+                        <div _ngcontent-c4="" class="col-s-6 col-m-5">
+                            <div _ngcontent-c4="" class="input-content">
+                              <select class="ui fluid search dropdown" name="asset-category" [(ngModel)]="newasset.category">
+                                  <option value=''>Select choice</option>
+                                  <option value="Automobile">Automobile</option>
+                                  <option value="House">House</option>
+                              </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+          <!--  <div class="six wide aligned column" >
+              <div class="field">
+                  <label>Cost Price of Asset:</label>
+              </div>
+            </div>
+
+            <div class="six wide aligned column" >
+                <div class="field" >
+                    <input  type="number" min="0" placeholder="Cost Price of Asset" [(ngModel)]="newasset.amt" name="asset-amt">
+                </div>
+            </div>-->
+
+            <div _ngcontent-c4="" class="m-input-container g-container">
+                  <div _ngcontent-c4="" class="g-row">
+                      <div _ngcontent-c4="" class="col-s-2 col-m-2">
+                          <label _ngcontent-c4="" class="a-input-label">Cost Price of Asset:</label>
+                      </div>
+                      <div _ngcontent-c4="" class="col-s-6 col-m-5">
+                          <div _ngcontent-c4="" class="input-content">
+                            <input  type="number" min="0" placeholder="Cost Price of Asset" [(ngModel)]="newasset.amt" name="asset-amt">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+          <!--  <div class="six wide aligned column" *ngIf="newasset.category === 'House'" >
+              <div class="field">
+                  <label>House No:</label>
+              </div>
+            </div>
+            <div class="six wide aligned column"  *ngIf="newasset.category === 'House'"  >
+                <div class="field" >
+                    <input  type="number" min="0" placeholder="House Number" [(ngModel)]="newasset.houseno" name="asset-houseno">
+                </div>
+            </div>-->
+
+            <div _ngcontent-c4="" class="m-input-container g-container"  *ngIf="newasset.category === 'House'" >
+                  <div _ngcontent-c4="" class="g-row">
+                      <div _ngcontent-c4="" class="col-s-2 col-m-2">
+                          <label _ngcontent-c4="" class="a-input-label">House No:</label>
+                      </div>
+                      <div _ngcontent-c4="" class="col-s-6 col-m-5">
+                          <div _ngcontent-c4="" class="input-content">
+                            <input  type="number" min="0" placeholder="House Number" [(ngModel)]="newasset.houseno" name="asset-houseno">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+            <!--<div class="six wide aligned column"  *ngIf="newasset.category === 'House'" >
+              <div class="field">
+                  <label>Street:</label>
+              </div>
+            </div>
+            <div class="six wide aligned column"  *ngIf="newasset.category === 'House'"  >
+                <div class="field" >
+                    <input  type="text"  placeholder="street address" [(ngModel)]="newasset.street" name="asset-street">
+                </div>
+            </div>-->
+
+            <div _ngcontent-c4="" class="m-input-container g-container"  *ngIf="newasset.category === 'House'" >
+                  <div _ngcontent-c4="" class="g-row">
+                      <div _ngcontent-c4="" class="col-s-2 col-m-2">
+                          <label _ngcontent-c4="" class="a-input-label">Street:</label>
+                      </div>
+                      <div _ngcontent-c4="" class="col-s-6 col-m-5">
+                          <div _ngcontent-c4="" class="input-content">
+                            <input  type="text"  placeholder="street address" [(ngModel)]="newasset.street" name="asset-street">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+            <!--<div class="six wide aligned column"  *ngIf="newasset.category === 'House'" >
+              <div class="field">
+                  <label>Postal code:</label>
+              </div>
+            </div>
+
+            <div class="six wide aligned column"  *ngIf="newasset.category === 'House'"  >
+                <div class="field" >
+                    <input  type="number" min="0" placeholder="Postal Code" [(ngModel)]="newasset.postalcode" name="asset-postalcode">
+                </div>
+            </div>-->
+
+            <div _ngcontent-c4="" class="m-input-container g-container"  *ngIf="newasset.category === 'House'" >
+                  <div _ngcontent-c4="" class="g-row">
+                      <div _ngcontent-c4="" class="col-s-2 col-m-2">
+                          <label _ngcontent-c4="" class="a-input-label">Postal code:</label>
+                      </div>
+                      <div _ngcontent-c4="" class="col-s-6 col-m-5">
+                          <div _ngcontent-c4="" class="input-content">
+                            <input  type="number" min="0" placeholder="Postal Code" [(ngModel)]="newasset.postalcode" name="asset-postalcode">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+          <!--  <div class="six wide aligned column" *ngIf="newasset.category === 'Automobile'" >
+              <div class="field">
+                  <label>AutoMobile Licence Plate:</label>
+              </div>
+            </div>
+            <div class="six wide aligned column"  *ngIf="newasset.category === 'Automobile'"  >
+                <div class="field" >
+                    <input  type="number" min="0"  placeholder="Automobile Licence plate" [(ngModel)]="newasset.amlicenceplate" name="asset-licenceplate">
+                </div>
+            </div>-->
+
+
+            <div _ngcontent-c4="" class="m-input-container g-container"  *ngIf="newasset.category === 'Automobile'">
+                  <div _ngcontent-c4="" class="g-row">
+                      <div _ngcontent-c4="" class="col-s-2 col-m-2">
+                          <label _ngcontent-c4="" class="a-input-label">AutoMobile Licence Plate:</label>
+                      </div>
+                      <div _ngcontent-c4="" class="col-s-6 col-m-5">
+                          <div _ngcontent-c4="" class="input-content">
+                            <input  type="number" min="0"  placeholder="Automobile Licence plate" [(ngModel)]="newasset.amlicenceplate" name="asset-licenceplate">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+          <!--  <div class="six wide aligned column"  *ngIf="newasset.category === 'Automobile'" >
+              <div class="field">
+                  <label>Mark:</label>
+              </div>
+            </div>
+            <div class="six wide aligned column"  *ngIf="newasset.category === 'Automobile'"  >
+              <select class="ui fluid search dropdown" name="asset-automobilemark" [(ngModel)]="newasset.automobilemark">
+                  <option value=''>Select choice</option>
+                  <option type="text" value="AUDI">Audi</option>
+                  <option type="text" value="BMW">BMW</option>
+              </select>
+            </div>-->
+
+
+            <div _ngcontent-c4="" class="m-input-container g-container"  *ngIf="newasset.category === 'Automobile'">
+                  <div _ngcontent-c4="" class="g-row">
+                      <div _ngcontent-c4="" class="col-s-2 col-m-2">
+                          <label _ngcontent-c4="" class="a-input-label">Mark:</label>
+                      </div>
+                      <div _ngcontent-c4="" class="col-s-6 col-m-5">
+                          <div _ngcontent-c4="" class="input-content">
+                            <select class="ui fluid search dropdown" name="asset-automobilemark" [(ngModel)]="newasset.automobilemark">
+                                <option value=''>Select choice</option>
+                                <option type="text" value="AUDI">Audi</option>
+                                <option type="text" value="BMW">BMW</option>
+                            </select>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+
+            <!--<div class="six wide aligned column"  *ngIf="newasset.category === 'Automobile' && newasset.automobilemark==='AUDI'" >
+              <div class="field">
+                  <label>Model:</label>
+              </div>
+            </div>
+            <div class="six wide aligned column"  *ngIf="newasset.category === 'Automobile' && newasset.automobilemark==='AUDI'"  >
+              <select class="ui fluid search dropdown" name="asset-automobilemodel" [(ngModel)]="newasset.automobilemodel">
+                  <option value=''>Select choice</option>
+                  <option type="text" value="A1">A1</option>
+                  <option type="text" value="A2">A2</option>
+                  <option type="text" value="A3">A3</option>
+              </select>
+            </div>-->
+
+
+            <div _ngcontent-c4="" class="m-input-container g-container"   *ngIf="newasset.category === 'Automobile' && newasset.automobilemark==='AUDI'"  >
+                  <div _ngcontent-c4="" class="g-row">
+                      <div _ngcontent-c4="" class="col-s-2 col-m-2">
+                          <label _ngcontent-c4="" class="a-input-label">Model:</label>
+                      </div>
+                      <div _ngcontent-c4="" class="col-s-6 col-m-5">
+                          <div _ngcontent-c4="" class="input-content">
+                            <select class="ui fluid search dropdown" name="asset-automobilemodel" [(ngModel)]="newasset.automobilemodel">
+                                <option value=''>Select choice</option>
+                                <option type="text" value="A1">A1</option>
+                                <option type="text" value="A2">A2</option>
+                                <option type="text" value="A3">A3</option>
+                            </select>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+            <!--<div class="six wide aligned column"  *ngIf="newasset.category === 'Automobile' && newasset.automobilemark==='BMW'" >
+              <div class="field">
+                  <label>Model:</label>
+              </div>
+            </div>
+            <div class="six wide aligned column"  *ngIf="newasset.category === 'Automobile' && newasset.automobilemark==='BMW'"  >
+              <select class="ui fluid search dropdown" name="asset-automobilemodel" [(ngModel)]="newasset.automobilemodel">
+                  <option value=''>Select choice</option>
+                  <option type="text" value="114">114</option>
+                  <option type="text" value="116">116</option>
+                  <option type="text" value="118">118</option>
+              </select>
+            </div>-->
+
+            <div _ngcontent-c4="" class="m-input-container g-container"  *ngIf="newasset.category === 'Automobile' && newasset.automobilemark==='BMW'">
+                  <div _ngcontent-c4="" class="g-row">
+                      <div _ngcontent-c4="" class="col-s-2 col-m-2">
+                          <label _ngcontent-c4="" class="a-input-label">Model:</label>
+                      </div>
+                      <div _ngcontent-c4="" class="col-s-6 col-m-5">
+                          <div _ngcontent-c4="" class="input-content">
+                            <select class="ui fluid search dropdown" name="asset-automobilemodel" [(ngModel)]="newasset.automobilemodel">
+                                <option value=''>Select choice</option>
+                                <option type="text" value="114">114</option>
+                                <option type="text" value="116">116</option>
+                                <option type="text" value="118">118</option>
+                            </select>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+            <!--<div class="six wide aligned column" *ngIf="newasset.category === 'Automobile'&& newasset.automobilemark==='BMW'"  >
+              <div class="field">
+                  <label>Engine size:</label>
+              </div>
+            </div>
+            <div class="six wide aligned column"  *ngIf="newasset.category === 'Automobile' && newasset.automobilemark==='BMW'"  >
+              <select class="ui fluid search dropdown" name="asset-enginesize" [(ngModel)]="newasset.enginesize">
+                  <option value=''>Select choice</option>
+                  <option type="number" value=1.5>1.5</option>
+                  <option type="number" value=1.6>1.6</option>
+                  <option type="number" value=2.0>2.0</option>
+              </select>
+
+            </div>-->
+
+            <div _ngcontent-c4="" class="m-input-container g-container" *ngIf="newasset.category === 'Automobile'&& newasset.automobilemark==='BMW'" >
+                  <div _ngcontent-c4="" class="g-row">
+                      <div _ngcontent-c4="" class="col-s-2 col-m-2">
+                          <label _ngcontent-c4="" class="a-input-label">Engine size:</label>
+                      </div>
+                      <div _ngcontent-c4="" class="col-s-6 col-m-5">
+                          <div _ngcontent-c4="" class="input-content">
+                            <select class="ui fluid search dropdown" name="asset-enginesize" [(ngModel)]="newasset.enginesize">
+                                <option value=''>Select choice</option>
+                                <option type="number" value=1.5>1.5</option>
+                                <option type="number" value=1.6>1.6</option>
+                                <option type="number" value=2.0>2.0</option>
+                            </select>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+
+
+          <!--  <div class="six wide aligned column" *ngIf="newasset.category === 'Automobile'&& newasset.automobilemark==='AUDI'"  >
+              <div class="field">
+                  <label>Engine size:</label>
+              </div>
+            </div>
+            <div class="six wide aligned column"  *ngIf="newasset.category === 'Automobile' && newasset.automobilemark==='AUDI'"  >
+              <select class="ui fluid search dropdown" name="asset-enginesize" [(ngModel)]="newasset.enginesize">
+                  <option value=''>Select choice</option>
+                  <option type="number" value=1.4>1.4</option>
+                  <option type="number" value=1.8>1.8</option>
+                  <option type="number" value=2.0>2.0</option>
+              </select>
+
+            </div>-->
+
+
+
+            <div _ngcontent-c4="" class="m-input-container g-container"  *ngIf="newasset.category === 'Automobile'&& newasset.automobilemark==='AUDI'"  >
+                  <div _ngcontent-c4="" class="g-row">
+                      <div _ngcontent-c4="" class="col-s-2 col-m-2">
+                          <label _ngcontent-c4="" class="a-input-label">Engine size:</label>
+                      </div>
+                      <div _ngcontent-c4="" class="col-s-6 col-m-5">
+                          <div _ngcontent-c4="" class="input-content">
+                            <select class="ui fluid search dropdown" name="asset-enginesize" [(ngModel)]="newasset.enginesize">
+                                <option value=''>Select choice</option>
+                                <option type="number" value=1.4>1.4</option>
+                                <option type="number" value=1.8>1.8</option>
+                                <option type="number" value=2.0>2.0</option>
+                            </select>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+
+
+          <!--  <div class="six wide aligned column">
+              <div class="field">
+                  <label>Available for sale (If you select true for this option the asset will be made public):</label>
+              </div>
+            </div>
+                <div class="six wide aligned column">
+                <div class="field">
+                  <select class="ui fluid search dropdown" name="asset-availableforsale" [(ngModel)]="newasset.availableforsale">
+                      <option value=''>Select choice</option>
+                      <option type="boolean" value=true>Yes</option>
+                      <option type="boolean" value=false>No</option>
+                  </select>
+                </div>
+            </div>-->
+
+
+                        <div _ngcontent-c4="" class="m-input-container g-container"  >
+                              <div _ngcontent-c4="" class="g-row">
+                                  <div _ngcontent-c4="" class="col-s-2 col-m-2">
+                                      <label _ngcontent-c4="" class="a-input-label">Available for sale<br> (If you select true for this option the asset will be made public):</label>
+                                  </div>
+                                  <div _ngcontent-c4="" class="col-s-6 col-m-5">
+                                      <div _ngcontent-c4="" class="input-content">
+                                        <select class="ui fluid search dropdown" name="asset-availableforsale" [(ngModel)]="newasset.availableforsale">
+                                            <option value=''>Select choice</option>
+                                            <option type="boolean" value=true>Yes</option>
+                                            <option type="boolean" value=false>No</option>
+                                        </select>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+
+            <div class="six wide aligned column">
+                <div class="field" >
+                    <button class="a-btn a-btn-m a-btn-primary" style="margin-right:100px; float:right;" (click)="create()">
+
+                        Register
+                    </button>
+                </div>
+            </div>
+
+      </div>
+
+    </form>
+</div>

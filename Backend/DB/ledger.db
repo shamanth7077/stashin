@@ -1,0 +1,34 @@
+{"coaf":"1234","insurerAddress":"0xca843569e3427144cead5e4d5999a3d0ccf92b8e","type":"addition of insurer","Insurername":"agon","_id":"2ctb24uZwXT4k1AY"}
+{"coaf":"1010","insurerAddress":"0xca843569e3427144cead5e4d5999a3d0ccf92b8e","type":"addition of insurer","Insurername":"bajaj","_id":"5I1WLIgWmyhCQ19T"}
+{"coaf":"1234","ownerAddress":"0x9186eb3d20cbd1f5f992a950d808c4495153abd5","type":"addition of asset","typeofasset":"Automobile","_id":"5SRzMppodpjjFsKR"}
+{"coaf":"1234","ownername":"test1","ownerAddress":"0x9186eb3d20cbd1f5f992a950d808c4495153abd5","type":"addition of owner","_id":"AK9hlLykeZMUwlQN"}
+{"coaf":"1234","ownername":"test1","ownerAddress":"0x9186eb3d20cbd1f5f992a950d808c4495153abd5","type":"addition of owner","_id":"ATpcgGKm3dAGof8W"}
+{"coaf":"1010","ownername":"test 2","ownerAddress":"0x0638e1574728b6d862dd5d3a3e0942c3be47d996","type":"addition of owner","_id":"DgPYlp1C8erPaDT2"}
+{"coaf":"1234","ownerAddress":"0x0638e1574728b6d862dd5d3a3e0942c3be47d996","type":"addition of asset","typeofasset":"House","_id":"L6LEg2qBcJftWfd8"}
+{"coaf":"1234","ownerAddress":"0x9186eb3d20cbd1f5f992a950d808c4495153abd5","type":"addition of asset","typeofasset":"Automobile","_id":"NvZEJjjbZrfwRm8h"}
+{"coaf":"1010","buyeraddress":"0x0638e1574728b6d862dd5d3a3e0942c3be47d996","selleraddress":"0x9186eb3d20cbd1f5f992a950d808c4495153abd5","id":"selling asset","_id":"P5JTOdPiVqcP1RzH"}
+{"coaf":"1010","insurerAddress":"0xed9d02e382b34818e88b88a309c7fe71e65f419d","type":"addition of insurer","Insurername":"agon","_id":"Rk8lN3Yls4DxRSCE"}
+{"coaf":"stashin","ownerAddress":"0x9186eb3d20cbd1f5f992a950d808c4495153abd5","type":"addition of asset","typeofasset":"House","_id":"S1YpIJxI9KYo5amZ"}
+{"coaf":"stashin","insurerAddress":"0xca843569e3427144cead5e4d5999a3d0ccf92b8e","owneraddress":"0x9186eb3d20cbd1f5f992a950d808c4495153abd5","type":"insuring asset","Insurername":"danske","idofasset":1,"_id":"VBeIKnyYCZvTojHm"}
+{"coaf":"stashin","ownername":"eric","ownerAddress":"0x0638e1574728b6d862dd5d3a3e0942c3be47d996","type":"addition of owner","_id":"XAC2KplDbDumk3CG"}
+{"coaf":"1234","insurerAddress":"0xed9d02e382b34818e88b88a309c7fe71e65f419d","type":"addition of insurer","Insurername":"tata aiz","_id":"ZyBzD1jCrEF1yyKX"}
+{"coaf":"stashin","buyeraddress":"0x0638e1574728b6d862dd5d3a3e0942c3be47d996","selleraddress":"0x9186eb3d20cbd1f5f992a950d808c4495153abd5","id":"selling asset","_id":"a7rnUSSI1VIeHvN9"}
+{"coaf":"1010","ownername":"test 2","ownerAddress":"0x0638e1574728b6d862dd5d3a3e0942c3be47d996","type":"addition of owner","_id":"cAbljNa6KgMXfP95"}
+{"coaf":"1234","insurerAddress":"0xed9d02e382b34818e88b88a309c7fe71e65f419d","type":"addition of insurer","Insurername":"tata","_id":"d8JqUQmyL2t9NAWq"}
+{"coaf":"1234","buyeraddress":"0x0fbdc686b912d7722dc86510934589e0aaf3b55a","selleraddress":"0xca843569e3427144cead5e4d5999a3d0ccf92b8e","id":"selling asset","_id":"dMvKKM4RztVj4ljj"}
+{"coaf":"stashin","insurerAddress":"0xed9d02e382b34818e88b88a309c7fe71e65f419d","type":"addition of insurer","Insurername":"allianz","_id":"fsoWPjWTOlgwDyl9"}
+{"coaf":"1010","ownerAddress":"0x9186eb3d20cbd1f5f992a950d808c4495153abd5","type":"addition of asset","typeofasset":"Automobile","_id":"g1mvhRHdosJbNBiR"}
+{"coaf":"stashin","insurerAddress":"0xed9d02e382b34818e88b88a309c7fe71e65f419d","owneraddress":"0x9186eb3d20cbd1f5f992a950d808c4495153abd5","type":"insuring asset","Insurername":"allianz","idofasset":0,"_id":"j4BQ7HCasAf49YbG"}
+{"coaf":"stashin","insurerAddress":"0xca843569e3427144cead5e4d5999a3d0ccf92b8e","type":"addition of insurer","Insurername":"danske","_id":"jaU7a93vy0jZBGuf"}
+{"coaf":"1234","ownername":"test2","ownerAddress":"0x0638e1574728b6d862dd5d3a3e0942c3be47d996","type":"addition of owner","_id":"q4RwlMcShGFWXBB6"}
+{"coaf":"stashin","ownername":"rohan khanna","ownerAddress":"0x9186eb3d20cbd1f5f992a950d808c4495153abd5","type":"addition of owner","_id":"uKMlXpyVVCDHcj7b"}
+{"coaf":"stashin","ownerAddress":"0x9186eb3d20cbd1f5f992a950d808c4495153abd5","type":"addition of asset","typeofasset":"Automobile","_id":"vnZz7ii80affxrju"}
+{"coaf":"1010","ownername":"rohan","ownerAddress":"0x0638e1574728b6d862dd5d3a3e0942c3be47d996","type":"addition of owner","_id":"w07DqdjlbIKkhBHf"}
+{"coaf":"1010","ownername":"test 1","ownerAddress":"0x9186eb3d20cbd1f5f992a950d808c4495153abd5","type":"addition of owner","_id":"zLkZQW58Omted2LW"}
+{"coaf":"stashin","ownername":"akhil","ownerAddress":"0x9186eb3d20cbd1f5f992a950d808c4495153abd5","type":"addition of owner","_id":"HRKvfrCbxeRMmKD2"}
+{"coaf":"stashin","ownername":"rohan","ownerAddress":"0x0638e1574728b6d862dd5d3a3e0942c3be47d996","type":"addition of owner","_id":"kDQYiTsEWHbvnM0n"}
+{"coaf":"stashin","ownerAddress":"0x9186eb3d20cbd1f5f992a950d808c4495153abd5","type":"addition of asset","typeofasset":"Automobile","_id":"jOuqx8PnmvTd9T2N"}
+{"coaf":"stashin","insurerAddress":"0xed9d02e382b34818e88b88a309c7fe71e65f419d","type":"addition of insurer","Insurername":"statefarm","_id":"8lQ4AyQlaPqRyne6"}
+{"coaf":"stashin","insurerAddress":"0xca843569e3427144cead5e4d5999a3d0ccf92b8e","type":"addition of insurer","Insurername":"danske","_id":"5etdbqqzOrHHFYiQ"}
+{"coaf":"stashin","insurerAddress":"0xed9d02e382b34818e88b88a309c7fe71e65f419d","owneraddress":"0x9186eb3d20cbd1f5f992a950d808c4495153abd5","type":"insuring asset","Insurername":"statefarm","idofasset":0,"_id":"lSxmpFsbr2wjNKDq"}
+{"coaf":"stashin","buyeraddress":"0x0638e1574728b6d862dd5d3a3e0942c3be47d996","selleraddress":"0x9186eb3d20cbd1f5f992a950d808c4495153abd5","id":"selling asset","_id":"zCj44M14s7uOwlMO"}

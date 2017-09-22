@@ -1,0 +1,42 @@
+<search *ngIf="!COAF"></search>
+
+<user-form *ngIf="COAF && !registered" [type]="'insurer'" [insurer]="insurer" [COAF]="COAF"></user-form>
+
+<div id="form" *ngIf="registered">
+    <form class="ui form centered grid">
+        <div class="row">
+            <div class="center aligned column">
+                <h1>Node is assigned to INSURER</h1>
+                <h1>'{{ name.toUpperCase() }}'</h1>
+            </div>
+        </div>
+    </form>
+</div>
+<div *ngIf="ins.name!=''" >
+    <div id="display" class="ui segment">
+    <h1>Registered Insurer  Information</h1>
+    <table class="ui celled padded blue table" *ngIf="user === 'insurer'">
+        <thead>
+        <tr>
+            <th class="center aligned">Name</th>
+            <th class="center aligned">Id no</th>
+            <th class="center aligned">Number of Clients</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr >
+            <td class="center aligned">
+                {{ ins.name }}
+            </td>
+            <td class="center aligned">
+                {{ ins.automobilepremieum }}
+            </td>
+            <td class="center aligned">
+                {{ ins.noofclients }}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+  </div>
+      </div>

@@ -1,0 +1,39 @@
+<div class="" style="width:80%;width: 80%;margin: 0 auto;height: 80px;padding: 20px 0 60px 0;margin-bottom: 23px;border-bottom: 5px solid #00304D;">
+  <div class="">
+    <div class="">
+      <div class="">
+        <div style="padding-right:50px;float:left;padding-top:15px;font-size:30px;font-weight:bold; " class="navigation-logo">STASHIN POC</div>
+          <a *ngIf="user == '2'" class="nav-item-link nav-item-link-trigger" routerLink="home">
+            Home
+          </a>
+          <a *ngIf="user == '3' || user == '4'" class="nav-item-link nav-item-link-trigger" routerLink="register/owner">
+            Register Owner
+          </a>
+          <a *ngIf="user == '3' || user == '4'" class="nav-item-link nav-item-link-trigger" routerLink="action/asset">
+            Assets
+          </a>
+          <a *ngIf="user == '5' || user=='6' " class="nav-item-link nav-item-link-trigger" routerLink="action/insurer">
+          Register Insurer
+          </a>
+          <a *ngIf="user == '1'" class="nav-item-link nav-item-link-trigger" routerLink="action/marketplace">
+          Show marketplace
+          </a>
+
+
+          <div class="right menu">
+            <div class="ui">
+              <select class="ui fluid search dropdown" name="Information" [(ngModel)]="user" (change)="switchUser($event)">
+                <option value="0">Retailer - Node 0</option>
+                <option value="1">Marketplace - Node 1</option>
+                <option value="3">Owner1 - Node 3</option>
+                <option value="4">Owner2 - Node 4</option>
+                <option value="5">Insurer1- Node 5</option>
+                <option value="6">Insurer2- Node 6</option>
+                <option value="2">Deployer</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

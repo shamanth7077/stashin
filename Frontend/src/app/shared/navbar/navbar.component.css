@@ -1,0 +1,27 @@
+#coaf-banner {
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: -40px;
+    margin-top: -85px;
+    text-align: center;
+}
+.menu.right{
+  float:right;
+}
+.header .nav-item .nav-item-link {
+    display: block;
+    padding: 0 20px;
+}
+
+.header .nav-item .nav-item-link, a {
+    transform: translateZ(0);
+    display: block;
+    padding: 15px 20px;
+    transition: transform 200ms ease-in-out;
+    color: #003755 !important;
+    display: inline-block;
+    font-size: 16px;
+}
+.navigation-logo a{
+
+}
